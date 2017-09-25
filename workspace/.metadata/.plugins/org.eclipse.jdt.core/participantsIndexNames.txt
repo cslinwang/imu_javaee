@@ -1,0 +1,5 @@
+INDEX VERSION 1.127
+D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1013155520.index
+\imu_web\src
+D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\542936861.index
+\imu_javaweb_work3\src

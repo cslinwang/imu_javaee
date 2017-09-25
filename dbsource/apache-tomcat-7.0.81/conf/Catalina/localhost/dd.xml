@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='GBK'?>
+<Context docBase="D:\javaee\dbsource" privileged="true">
+  <Resource name="jdbc/dstest" auth="Container" type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver"
+       url="jdbc:mysql://localhost:3306/javaee?useSSL=true" username="root" password="mysql" maxActive="5" maxIdle="2"        maxWait="10000"/>
+</Context>
+
+

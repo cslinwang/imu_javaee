@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 7 elements from project &apos;imu_javaweb_work3&apos;&#x0D;&#x0A;- Original project: &apos;imu_javaweb_work3&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     dao&#x0D;&#x0A;     db&#x0D;&#x0A;     filter&#x0D;&#x0A;     listener&#x0D;&#x0A;     service&#x0D;&#x0A;     servlet&#x0D;&#x0A;     vo" description="Delete elements" element1="WebContent/filter" element2="WebContent/listener" element3="WebContent/service" element4="WebContent/servlet" element5="WebContent/vo" element6="WebContent/dao" element7="WebContent/db" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="7" stamp="1506324337136" subPackages="false" version="1.0"/>
+</session>
