@@ -1,0 +1,7 @@
+package web2017.team4.wanglin.ioc;
+
+public class aaaa {
+	public static void main(String[] args) {
+		System.out.println("aasd");
+	}
+}

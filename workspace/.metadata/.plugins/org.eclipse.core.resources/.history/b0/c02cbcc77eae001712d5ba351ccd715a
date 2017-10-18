@@ -1,8 +1,0 @@
-package web2017.team4.wanglin.web;
-
-public class Snippet {
-	public static void main(String[] args) {
-		web2017.team4.wanglin.web
-	}
-}
-

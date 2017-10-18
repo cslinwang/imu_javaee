@@ -1,0 +1,5 @@
+package web2017.team4.wanglin.ioc.first;
+
+public interface IDataAccess {
+	void add();
+}

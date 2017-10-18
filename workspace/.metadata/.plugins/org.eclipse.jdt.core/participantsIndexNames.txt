@@ -1,25 +1,5 @@
 INDEX VERSION 1.127
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1933777251.index
-\chapter2\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2064734919.index
-\demo\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2469732179.index
-\demo\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3921505392.index
-\imu_javaweb_work6\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3518450642.index
-\chapter2\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3103782925.index
-\imu_javaweb_work6\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\833971360.index
-\demo\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\486471842.index
-\chapter2\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3118955516.index
-\chapter2\src
 D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\542936861.index
 \imu_javaweb_work3\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2934654592.index
-\imu_javaweb_work6\src
-D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3843024971.index
+D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3103782925.index
 \imu_javaweb_work6\src

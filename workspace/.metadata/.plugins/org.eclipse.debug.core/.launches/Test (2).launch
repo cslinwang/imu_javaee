@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/imu_javaweb_work7/src/web2017/team4/wanglin/ioc/byinterface/Test.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="web2017.team4.wanglin.ioc.byinterface.Test"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="imu_javaweb_work7"/>
+</launchConfiguration>
