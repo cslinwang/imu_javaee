@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\imu_javaweb_work3" path="/imu_javaweb_work3" reloadable="true" source="org.eclipse.jst.jee.server:imu_javaweb_work3"/></Host>
+      <Context docBase="D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\imu_javaweb_work6" path="/imu_javaweb_work6" reloadable="true" source="org.eclipse.jst.jee.server:imu_javaweb_work6"/><Context docBase="D:\imu\imu_javaee\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\imu_javaweb_work3" path="/imu_javaweb_work3" reloadable="true" source="org.eclipse.jst.jee.server:imu_javaweb_work3"/></Host>
     </Engine>
   </Service>
 </Server>

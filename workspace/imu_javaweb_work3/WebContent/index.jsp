@@ -29,7 +29,7 @@
 
 	<div align="center">
 		welcome <b><%=session.getAttribute("username")%></b> login ,The
-		current number of online is：<%=web2017.team4.wanglin.listener.OnlineNumberListener.getCount()%>
+		current number of online is：<%=web2017.team4.wanglin.listener.UserList.getUserCount()%>
 		<form action="LoginOut">
 			<tr>
 				<td colspan="2" align="center"><input type="submit" value="登出">

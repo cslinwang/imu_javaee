@@ -74,8 +74,10 @@
 		<servlet-name>LoginOut</servlet-name>
 		<url-pattern>/LoginOut</url-pattern>
 	</servlet-mapping>
+	<!-- <listener> <description>在线人数统计</description> <listener-class>web2017.team4.wanglin.listener.OnlineNumberListener</listener-class> 
+		</listener> -->
+	<!-- 配置监听器 -->
 	<listener>
-		<description>在线人数统计</description>
-		<listener-class>web2017.team4.wanglin.listener.OnlineNumberListener</listener-class>
+		<listener-class>web2017.team4.wanglin.listener.OnlineListener</listener-class>
 	</listener>
 </web-app>

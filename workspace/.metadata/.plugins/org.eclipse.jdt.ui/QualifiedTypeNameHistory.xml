@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="web2017.team4.wanglin.dao.UserDao"/>
+<fullyQualifiedTypeName name="web2017.team4.wanglin.dao.LoginLogDao"/>
+<fullyQualifiedTypeName name="web2017.team4.wanglin.vo.LoginLog"/>
+<fullyQualifiedTypeName name="web2017.team4.wanglin.service.UserService"/>
+<fullyQualifiedTypeName name="web2017.team4.wanglin.vo.User"/>
+</qualifiedTypeNameHistroy>

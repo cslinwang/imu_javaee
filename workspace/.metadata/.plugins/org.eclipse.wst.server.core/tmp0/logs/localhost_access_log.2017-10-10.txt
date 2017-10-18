@@ -1,0 +1,13 @@
+127.0.0.1 - - [10/Oct/2017:14:23:57 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:08 +0800] "GET /webdemo/ HTTP/1.1" 404 967
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:09 +0800] "GET /favicon.ico HTTP/1.1" 404 973
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:14 +0800] "GET /imu_javaweb_work3 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:15 +0800] "GET /imu_javaweb_work3/ HTTP/1.1" 200 1302
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:18 +0800] "POST /imu_javaweb_work3/LoginServlet HTTP/1.1" 200 1302
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:19 +0800] "POST /imu_javaweb_work3/LoginServlet HTTP/1.1" 200 1302
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:21 +0800] "GET /imu_javaweb_work3 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:21 +0800] "GET /imu_javaweb_work3/ HTTP/1.1" 200 1302
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:27 +0800] "GET /imu_javaweb_work3/main.jsp HTTP/1.1" 404 1003
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:35 +0800] "GET /imu_javaweb_work3/index.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:35 +0800] "GET /imu_javaweb_work3/login.jsp HTTP/1.1" 200 1302
+0:0:0:0:0:0:0:1 - - [10/Oct/2017:14:24:53 +0800] "GET /imu_javaweb_work3/login.jsp HTTP/1.1" 200 1302
