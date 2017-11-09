@@ -8,4 +8,6 @@
 <fullyQualifiedTypeName name="web2017.team4.wanglin.vo.LoginLog"/>
 <fullyQualifiedTypeName name="web2017.team4.wanglin.service.UserService"/>
 <fullyQualifiedTypeName name="web2017.team4.wanglin.vo.User"/>
+<fullyQualifiedTypeName name="web2017.team4.wanglin.ioc.byinterface.IDependent"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>

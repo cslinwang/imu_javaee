@@ -1,3 +1,0 @@
-INSERT INTO `user` VALUES (1, 'admin', '123', 123);
-INSERT INTO `user` VALUES (2, NULL, NULL, NULL);
-INSERT INTO `user` VALUES (3, 'admin', '123', NULL);

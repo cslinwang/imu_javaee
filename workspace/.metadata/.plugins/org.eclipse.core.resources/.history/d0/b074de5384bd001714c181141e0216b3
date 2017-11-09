@@ -1,0 +1,411 @@
+package web2017.team5.lini.dao;
+
+import java.sql.Array;
+import java.sql.Blob;
+import java.sql.CallableStatement;
+import java.sql.Clob;
+import java.sql.Connection;
+import java.sql.DatabaseMetaData;
+import java.sql.NClob;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLClientInfoException;
+import java.sql.SQLException;
+import java.sql.SQLWarning;
+import java.sql.SQLXML;
+import java.sql.Savepoint;
+import java.sql.Statement;
+import java.sql.Struct;
+import java.util.Map;
+import java.util.Properties;
+import java.util.concurrent.Executor;
+
+import web2017.team5.lini.db.JDBC;
+
+//对数据库进行操作
+public class UserDao {
+	public int addUser(String name, String password) {
+		int num = 0;	
+		try {
+			Connection con = JDBC.getConnection();// 连接数据库
+			String sql = "insert into user(name,password) values(?,?)";// 数据库操作语句
+			PreparedStatement ps = con.prepareStatement(sql);// 预编译
+			ps.setString(1, name);
+			ps.setString(2, password);
+			System.out.println(name);
+			num = ps.executeUpdate();// 执行语句
+			//释放资源
+			ps.close();
+			con.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return num;
+	}
+
+	public int selectByNamePassword(String name, String password) {
+		// TODO Auto-generated method stub
+		int num = 0;
+		ResultSet rs = null;
+		try {
+
+			Connection con = new Connection() {
+				
+				@Override
+				public <T> T unwrap(Class<T> arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean isWrapperFor(Class<?> arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public void setTypeMap(Map<String, Class<?>> arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setTransactionIsolation(int arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setSchema(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public Savepoint setSavepoint(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Savepoint setSavepoint() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public void setReadOnly(boolean arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setNetworkTimeout(Executor arg0, int arg1) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setHoldability(int arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setClientInfo(String arg0, String arg1)
+						throws SQLClientInfoException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setClientInfo(Properties arg0) throws SQLClientInfoException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setCatalog(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void setAutoCommit(boolean arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void rollback(Savepoint arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void rollback() throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void releaseSavepoint(Savepoint arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public PreparedStatement prepareStatement(String arg0, int arg1, int arg2,
+						int arg3) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public PreparedStatement prepareStatement(String arg0, int arg1, int arg2)
+						throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public PreparedStatement prepareStatement(String arg0, String[] arg1)
+						throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public PreparedStatement prepareStatement(String arg0, int[] arg1)
+						throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public PreparedStatement prepareStatement(String arg0, int arg1)
+						throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public PreparedStatement prepareStatement(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public CallableStatement prepareCall(String arg0, int arg1, int arg2,
+						int arg3) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public CallableStatement prepareCall(String arg0, int arg1, int arg2)
+						throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public CallableStatement prepareCall(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public String nativeSQL(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean isValid(int arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public boolean isReadOnly() throws SQLException {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public boolean isClosed() throws SQLException {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public SQLWarning getWarnings() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Map<String, Class<?>> getTypeMap() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public int getTransactionIsolation() throws SQLException {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+				
+				@Override
+				public String getSchema() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public int getNetworkTimeout() throws SQLException {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+				
+				@Override
+				public DatabaseMetaData getMetaData() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public int getHoldability() throws SQLException {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+				
+				@Override
+				public String getClientInfo(String arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Properties getClientInfo() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public String getCatalog() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean getAutoCommit() throws SQLException {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public Struct createStruct(String arg0, Object[] arg1) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Statement createStatement(int arg0, int arg1, int arg2)
+						throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Statement createStatement(int arg0, int arg1) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Statement createStatement() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public SQLXML createSQLXML() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public NClob createNClob() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Clob createClob() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Blob createBlob() throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Array createArrayOf(String arg0, Object[] arg1) throws SQLException {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public void commit() throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void close() throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void clearWarnings() throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void abort(Executor arg0) throws SQLException {
+					// TODO Auto-generated method stub
+					
+				}
+			};
+					JDBC.getConnection();// 连接数据库
+			if (con == null) {
+				throw new SQLException("con is null");
+			}
+			String sql = "select * from user where name = ? and password = ?";// 数据库操作语句
+			PreparedStatement ps = con.prepareStatement(sql);// 预编译
+			ps.setString(1, name);
+			ps.setString(2, password);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				int id = rs.getInt("Id");
+				String newname = rs.getString("name");
+				String newpassword = rs.getString("password");
+				// System.out.println(id + "\t" + newname + "\t" + newpassword);
+				num++;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return num;
+
+	}
+}

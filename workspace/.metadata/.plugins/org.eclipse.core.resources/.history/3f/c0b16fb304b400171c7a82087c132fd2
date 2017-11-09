@@ -1,5 +1,0 @@
-package web2017.team4.wanglin.ioc;
-
-public interface IDataAccess {
-
-}
