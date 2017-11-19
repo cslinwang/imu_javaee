@@ -1,0 +1,22 @@
+1510193736574	Delete elements
+1510194732066	Rename package 'web2017.team5.lini.dao'
+1510194738370	Rename package 'web2017.team5.lini.service'
+1510194744682	Rename package 'web2017.team5.lini.vo'
+1510194750395	Rename package 'web2017.team5.lini.web'
+1510194757294	Delete element
+1510194760550	Delete element
+1510194997182	Delete element
+1510195049161	Delete element
+1510195732762	Copy package
+1510195738129	Delete element
+1510197588558	Rename package 'web2017.team4.wanglin.lini.vo'
+1510197773409	Move compilation unit
+1510203132265	Rename type 'UserServicec'
+1510203138390	Rename type 'UserServicecImpl'
+1510204003905	Delete elements
+1510204044838	Move 'jsp' to 'WEB-INF'
+1510204134731	Rename package 'web2017.team8.zhangshengdong.web'
+1510204142621	Rename package 'web2017.team8.zhangshengdong.domain'
+1510204508793	Rename package 'web2017.team8.zhangshengdong.dao'
+1510204519911	Rename package 'web2017.team8.zhangshengdong.service'
+1510204625252	Rename resource 'baobaotao-servlet.xml'

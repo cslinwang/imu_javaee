@@ -1,0 +1,103 @@
+package web2017.team4.wanglin.web;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import web2017.team4.wanglin.domain.User;
+import web2017.team4.wanglin.service.UserService;
+
+//1.标注成为一个spring mvc的controller
+@Controller
+public class UserController {
+
+	@Autowired
+	private UserService userService;
+	
+	//2.负责处理index.html请求
+	@RequestMapping(value="/index.html")
+	public String loginPage(){
+		return "login";
+	}
+	
+	//3.负责处理loginCheck.html请求
+	@RequestMapping(value="/loginCheck.html")
+	public ModelAndView loginCheck(HttpServletRequest request, LoginCommand loginCommand){
+		boolean isValidUser = userService.hasMatchUser(loginCommand.getUserName(), loginCommand.getPassword());
+		if(!isValidUser){
+			//modelAndView第一个参数代表视图的逻辑名
+			//第二和第三个参数分别是数据模型名称和数据模型对象
+			//数据模型对象将以数据模型名称为参数放置到request的属性中
+			return new ModelAndView("login", "error", "用户名或密码错误");
+		}else{
+			User user = userService.findUserByUserName(loginCommand.getUserName());
+			user.setLastIp(request.getRemoteAddr());
+			user.setLastVisit(new Date());
+			userService.loginSuccess(user);
+			request.getSession().setAttribute("user", user);
+			List<User> users = userService.getUserList();
+			request.setAttribute("users", users);
+			//如果通过，将解析为/WEB-INF/jsp/main.jsp
+			return new ModelAndView("main");
+		}
+	}
+	
+	//负责处理注册请求
+	@RequestMapping(value="/register.html")
+	public ModelAndView register(HttpServletRequest request){
+		String userName = request.getParameter("userName");
+		String password = request.getParameter("password");
+		User user = new User();
+		user.setUserName(userName);
+		user.setPassword(password);
+		userService.register(user);
+		List<User> users = userService.getUserList();
+		request.setAttribute("users", users);
+		return new ModelAndView("main");
+	}
+	
+	@RequestMapping(value="/deleteUser.html")
+	public ModelAndView deleteUser(HttpServletRequest request){
+		String userId = request.getParameter("userId");
+		User user = new User();
+		user.setUserId(Integer.parseInt(userId));
+		userService.deleteUser(user);
+		List<User> users = userService.getUserList();
+		request.setAttribute("users", users);
+		return new ModelAndView("main");
+	}
+	
+	@RequestMapping(value="/modifyUser.html")
+	public ModelAndView modifyUser(HttpServletRequest request){
+		String userId = request.getParameter("userId");
+		String userName = request.getParameter("userName");
+		String password = request.getParameter("password");
+		String credits = request.getParameter("credits");
+		User user = new User();
+		user.setUserId(Integer.parseInt(userId));
+		user.setUserName(userName);
+		user.setPassword(password);
+		user.setCredits(credits);
+		userService.modifyUser(user);
+		List<User> users = userService.getUserList();
+		request.setAttribute("users", users);
+		return new ModelAndView("main");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

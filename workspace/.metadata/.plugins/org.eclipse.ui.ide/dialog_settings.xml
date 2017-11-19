@@ -5,6 +5,8 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\imu\imu_javaee - 副本\workspace\imu_javaweb_work3"/>
+			<item value="C:\Users\wwwgl\Desktop\Reflection"/>
 			<item value="D:\Workspaces\shop"/>
 			<item value="D:\imu\imu_javaee\imu_web"/>
 		</list>

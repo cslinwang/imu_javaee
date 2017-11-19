@@ -6,7 +6,7 @@
 	<display-name></display-name>
 	<filter>
 		<filter-name>login</filter-name>
-		<filter-class>web2017.team5.lini.filter.LoginFilter</filter-class>
+		<filter-class>web2017.team4.wanglin.filter.LoginFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>login</filter-name>
@@ -16,19 +16,19 @@
 		<description>This is the description of my J2EE component</description>
 		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>web2017.team5.lini.servlet.LoginServlet</servlet-class>
+		<servlet-class>web2017.team4.wanglin.servlet.LoginServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<description>This is the description of my J2EE component</description>
 		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>AddUserServlet</servlet-name>
-		<servlet-class>web2017.team5.lini.servlet.AddUserServlet</servlet-class>
+		<servlet-class>web2017.team4.wanglin.servlet.AddUserServlet</servlet-class>
 	</servlet>
 	<servlet>
 		<description>This is the description of my J2EE component</description>
 		<display-name>This is the display name of my J2EE component</display-name>
 		<servlet-name>DemoServlet</servlet-name>
-		<servlet-class>web2017.team5.lini.servlet.DemoServlet</servlet-class>
+		<servlet-class>web2017.team4.wanglin.servlet.DemoServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
@@ -49,7 +49,7 @@
 		<description></description>
 		<display-name>UserServlet</display-name>
 		<servlet-name>UserServlet</servlet-name>
-		<servlet-class>web2017.team5.lini.servlet.UserServlet</servlet-class>
+		<servlet-class>web2017.team4.wanglin.servlet.UserServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>UserServlet</servlet-name>
@@ -58,7 +58,7 @@
 	<filter>
 		<display-name>LoginFilter</display-name>
 		<filter-name>LoginFilter</filter-name>
-		<filter-class>web2017.team5.lini.filter.LoginFilter</filter-class>
+		<filter-class>web2017.team4.wanglin.filter.LoginFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>LoginFilter</filter-name>
@@ -68,16 +68,16 @@
 		<description></description>
 		<display-name>LoginOut</display-name>
 		<servlet-name>LoginOut</servlet-name>
-		<servlet-class>web2017.team5.lini.servlet.LoginOut</servlet-class>
+		<servlet-class>web2017.team4.wanglin.servlet.LoginOut</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginOut</servlet-name>
 		<url-pattern>/LoginOut</url-pattern>
 	</servlet-mapping>
-	<!-- <listener> <description>在线人数统计</description> <listener-class>web2017.team5.lini.listener.OnlineNumberListener</listener-class> 
+	<!-- <listener> <description>在线人数统计</description> <listener-class>web2017.team4.wanglin.listener.OnlineNumberListener</listener-class> 
 		</listener> -->
 	<!-- 配置监听器 -->
 	<listener>
-		<listener-class>web2017.team5.lini.listener.OnlineListener</listener-class>
+		<listener-class>web2017.team4.wanglin.listener.OnlineListener</listener-class>
 	</listener>
 </web-app>

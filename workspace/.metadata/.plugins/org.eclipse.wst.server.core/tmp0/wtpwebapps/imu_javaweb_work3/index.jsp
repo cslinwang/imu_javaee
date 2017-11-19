@@ -1,5 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%@ page import="web2017.team5.lini.listener.*" %>
+<%@ page import="web2017.team4.wanglin.listener.*" %>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -29,7 +29,7 @@
 
 	<div align="center">
 		welcome <b><%=session.getAttribute("username")%></b> login ,The
-		current number of online is：<%=web2017.team5.lini.listener.UserList.getUserCount()%>
+		current number of online is：<%=web2017.team4.wanglin.listener.UserList.getUserCount()%>
 		<form action="LoginOut">
 			<tr>
 				<td colspan="2" align="center"><input type="submit" value="登出">

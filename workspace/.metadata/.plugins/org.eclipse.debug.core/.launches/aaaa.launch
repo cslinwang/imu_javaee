@@ -6,6 +6,6 @@
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="web2017.team5.lini.ioc.byconstructor.AAAA"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="web2017.team4.wanglin.ioc.byconstructor.AAAA"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="imu_javaweb_work7"/>
 </launchConfiguration>

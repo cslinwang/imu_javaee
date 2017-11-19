@@ -1,6 +1,0 @@
-package web2017.team5.lini.vo;
-
-public class Student {
-	private Stirng name;
-	
-}

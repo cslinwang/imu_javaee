@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<center>
+		<a>欢迎修改！</a>
+		<form action="modifyUser.html" method="post">
+			<table align="center">
+				<%
+					String userId = request.getParameter("userId");
+					String userName = request.getParameter("userName");
+					String password = request.getParameter("password");
+					String credits = request.getParameter("credits");
+					System.out.println(userId + "-" + userName + "-" + password+"-" + credits);
+				%>
+				<tr>
+					<td>用户名：</td>
+					<td><input type="text" name="userName" value="<%=userName%>"></td>
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<td><input type="text" name="password" value="<%=password%>"></td>
+				</tr>
+				<tr>
+					<td>积分：</td>
+					<td><input type="text" name="credits" value="<%=credits%>"></td>
+				</tr>
+				<tr>
+					<td><input type="hidden" name="userId" value="<%=userId%>"></td>
+					<td><input type="submit" value="提交"><input
+						type="button" value="返回"></td>
+				</tr>
+				<tr></tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

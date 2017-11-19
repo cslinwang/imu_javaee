@@ -1,0 +1,37 @@
+package testmultidatasource;
+
+import java.sql.SQLFeatureNotSupportedException;
+import java.util.logging.Logger;
+
+import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
+
+public class DynamicDataSource extends AbstractRoutingDataSource {
+
+	public static final String DATA_SOURCE_MYSQL = "dataSource1";
+	public static final String DATA_SOURCE_ORACLE = "dataSource2";
+	public static final String DATA_SOURCE_DB2 = "dataSource3";
+	private static final ThreadLocal<String> contextHolder = new ThreadLocal<String>();
+	
+	public static void setCustomerType(String customerType) {
+        contextHolder.set(customerType);
+	}
+	public static String getCustomerType() {
+	        return contextHolder.get();
+	}
+	public static void clearCustomerType() {
+	        contextHolder.remove();
+	}
+	
+	@Override
+	public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected Object determineCurrentLookupKey() {
+		// 从自定义的位置获取数据源标识
+		return getCustomerType();
+	}
+
+}

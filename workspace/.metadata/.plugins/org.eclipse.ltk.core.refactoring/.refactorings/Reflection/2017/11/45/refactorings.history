@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;imu_javaweb_work8/src&apos;&#x0D;&#x0A;- Original project: &apos;Reflection&apos;&#x0D;&#x0A;- Destination element: &apos;imu_javaweb_work8/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Reflection/src/web2017.team4.linyi.Ref&#x0D;&#x0A;     Reflection/src/web2017.team4.linyi.test" description="Copy packages" destination="=imu_javaweb_work8/src" element1="/src&lt;web2017.team4.linyi.Ref" element2="/src&lt;web2017.team4.linyi.test" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1510205739266" version="1.0"/>
+</session>
